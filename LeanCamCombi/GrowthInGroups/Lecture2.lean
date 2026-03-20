@@ -1,5 +1,9 @@
-import Mathlib.Algebra.Order.Group.Pointwise.Interval
-import LeanCamCombi.Mathlib.Combinatorics.Additive.ApproximateSubgroup
+module
+
+public import LeanCamCombi.Mathlib.Combinatorics.Additive.ApproximateSubgroup
+public import Mathlib.Algebra.Order.Group.Pointwise.Interval
+
+public section
 
 open Fin Finset List
 open scoped Pointwise

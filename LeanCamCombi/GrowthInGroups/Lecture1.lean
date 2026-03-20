@@ -3,13 +3,15 @@ Copyright (c) 2024 Yaël Dillies. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Yaël Dillies
 -/
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Combinatorics.Additive.DoublingConst
-import Mathlib.Combinatorics.Additive.VerySmallDoubling
-import Mathlib.Geometry.Group.Growth.LinearLowerBound
-import Mathlib.GroupTheory.Nilpotent
-import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
-import LeanCamCombi.Util
+module
+
+public import LeanCamCombi.Util
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Combinatorics.Additive.DoublingConst
+public import Mathlib.Combinatorics.Additive.VerySmallDoubling
+public import Mathlib.Geometry.Group.Growth.LinearLowerBound
+public import Mathlib.GroupTheory.Nilpotent
+public import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
 
 /-!
 # Growth in Groups - Lecture 1
@@ -21,6 +23,8 @@ course Growth in Groups lectured by Simon Machado in autumn/winter 2024.
 
 [Lecture notes by Simon Machado](https://sites.google.com/view/simonmachado/teaching)
 -/
+
+public section
 
 open Finset Fintype Group MulOpposite Real
 open scoped Combinatorics.Additive MatrixGroups Pointwise

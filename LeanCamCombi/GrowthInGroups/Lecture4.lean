@@ -1,8 +1,12 @@
-import Mathlib.Analysis.Matrix.Normed
-import Mathlib.GroupTheory.Nilpotent
-import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
-import LeanCamCombi.Mathlib.Combinatorics.Additive.ApproximateSubgroup
-import LeanCamCombi.Util
+module
+
+public import LeanCamCombi.Mathlib.Combinatorics.Additive.ApproximateSubgroup
+public import LeanCamCombi.Util
+public import Mathlib.Analysis.Matrix.Normed
+public import Mathlib.GroupTheory.Nilpotent
+public import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
+
+public section
 
 open Group
 open scoped Finset MatrixGroups Pointwise

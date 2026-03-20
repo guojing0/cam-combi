@@ -3,9 +3,11 @@ Copyright (c) 2022 Yaël Dillies. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Yaël Dillies
 -/
-import Mathlib.Data.Finset.Sups
-import Mathlib.Data.Fintype.Basic
-import Mathlib.Order.UpperLower.Basic
+module
+
+public import Mathlib.Data.Finset.Sups
+public import Mathlib.Data.Fintype.Basic
+public import Mathlib.Order.UpperLower.Basic
 
 /-!
 # Set family certificates
@@ -24,6 +26,8 @@ as probabilistic events, the size of the certificator `𝒜 □ ℬ` corresponds
 
 * D. Reimer, *Proof of the Van den Berg–Kesten Conjecture*
 -/
+
+@[expose] public section
 
 open scoped FinsetFamily
 

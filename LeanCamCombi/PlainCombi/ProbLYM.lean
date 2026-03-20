@@ -3,8 +3,10 @@ Copyright (c) 2024 Ching-Tsun Chou, Chris Wong. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Ching-Tsun Chou, Chris Wong
 -/
-import Mathlib.Algebra.BigOperators.Field
-import Mathlib.Combinatorics.KatonaCircle
+module
+
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Combinatorics.KatonaCircle
 
 /-!
 # The LYM inequality using probability theory
@@ -27,6 +29,8 @@ The proof of Theorem 1.10, Lecture 3 in the Cambridge lecture notes on combinato
 
 is basically the same proof, except without using probability theory.
 -/
+
+public section
 
 open Finset Fintype Numbering
 

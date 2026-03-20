@@ -1,11 +1,15 @@
-import Mathlib.Algebra.Field.Rat
-import Mathlib.Combinatorics.SimpleGraph.Subgraph
+module
+
+public import Mathlib.Algebra.Field.Rat
+public import Mathlib.Combinatorics.SimpleGraph.Subgraph
 
 /-!
 # TODO
 
 Rename `edgeDensity` to `edgeDensityBtw`
 -/
+
+@[expose] public section
 
 open Finset
 

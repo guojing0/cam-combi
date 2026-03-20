@@ -1,6 +1,11 @@
-import Mathlib.Algebra.Order.BigOperators.Ring.Finset
-import Mathlib.Combinatorics.Additive.ApproximateSubgroup
+module
+
+public import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+public import Mathlib.Combinatorics.Additive.ApproximateSubgroup
+
 import Mathlib.Tactic.Bound
+
+@[expose] public section
 
 open scoped Finset Pointwise
 

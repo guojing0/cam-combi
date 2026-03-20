@@ -3,13 +3,17 @@ Copyright (c) 2022 Yaël Dillies. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Yaël Dillies
 -/
-import Mathlib.Analysis.Normed.Module.HahnBanach
-import Mathlib.Combinatorics.Enumerative.DoubleCounting
-import Mathlib.Order.Partition.Finpartition
+module
+
+public import Mathlib.Analysis.Normed.Module.HahnBanach
+public import Mathlib.Combinatorics.Enumerative.DoubleCounting
+public import Mathlib.Order.Partition.Finpartition
 
 /-!
 # The Littlewood-Offord problem
 -/
+
+public section
 
 open scoped BigOperators
 
