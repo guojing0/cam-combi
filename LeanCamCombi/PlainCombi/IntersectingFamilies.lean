@@ -1,7 +1,7 @@
 /-
-Copyright (c) 2025 Yahel Manor. All rights reserved.
+Copyright (c) 2025 Yahel Manor, Jing Guo. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Yahel Manor
+Authors: Yahel Manor, Jing Guo
 -/
 module
 
@@ -97,7 +97,7 @@ theorem IsIntersectingFamily.card_le_of_sized {l r : ℕ} {𝒜 : Set (Finset α
           _ ≤ (card α - (k + 1)).choose (r - (k + 1)) := ind inter_succ_k
           _ = (card α - (k + 1)).choose (card α - (k + 1) - (r - (k + 1))) := by
             rw [Nat.choose_symm]; omega
-          _ = (card α - (k + 1)).choose (card α - r) := by congr 1;omega
+          _ = (card α - (k + 1)).choose (card α - r) := by congr 1; omega
           _ = (card α - k - 1).choose (card α - r) := by congr 1
           _ ≤ (card α - k).choose (card α - r) := by apply Nat.choose_mono; omega
           _ ≤ (card α - k).choose (card α - k - (card α - r)) := by
